@@ -1,0 +1,28 @@
+#ifndef __COMMON_H__
+#define __COMMON_H__
+
+#define MAX_CPUS (32)
+#define MAX_SOCKETS (4)
+
+#define MAX_PORTS (8)
+
+#define MAX_RX_QUEUES_PER_PORT (MAX_CPUS)
+#define MAX_TX_QUEUES_PER_PORT (MAX_CPUS)
+#define MAX_QUEUES_PER_PORT (MAX_RX_QUEUES_PER_PORT + MAX_TX_QUEUES_PER_PORT)
+
+#define MAX_RX_QUEUES_PER_CPU (MAX_PORTS)
+#define MAX_TX_QUEUES_PER_CPU (MAX_PORTS)
+
+#define DEFAULT_RX_BURST_SIZE (16)
+#define DEFAULT_TX_BURST_SIZE (16)
+
+#define MAX_RX_BURST_SIZE (32)
+#define MAX_TX_BURST_SIZE (32)
+
+#define MAC_ADDR_SEED (0xdeadbeef)
+#define IP_ADDR_SEED (0xcafed00d)
+#define SRAND_SEED (0xdeadc0de)
+
+#define OUTPORT_OFFSET (23)
+
+#endif
